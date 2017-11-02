@@ -1,0 +1,59 @@
+/*
+ * Vixor - Responsive Website Template
+ * Version: 1.0.3
+ * Copyright 2016
+ * Created by: damterthemes
+ * @damterthemes: https://wrapbootstrap.com/user/damterthemes
+ */
+
+/* LANDING PAGE STYLES */
+html { overflow-x: hidden; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+html, body { height: 100%; min-width: 320px !important; }
+ body { font-family: 'latoregular', Arial, sans-serif; }
+
+/* Section */
+section { padding: 0; }
+.section-padding { padding: 50px 0 5px 0; }
+.box-divider-lp { padding-top: 40px; }
+
+/* Title */
+.title-lp { text-transform: uppercase; text-align: center; font-size: 1.5em; margin-top: 0; }
+.subtitle-lp { width: 70%; margin: 0 auto; text-align: center; font-size: 1.1em; margin-top: 1em; margin-bottom: 3em; }
+
+/* Home */
+#home-lp { background: url("../images/bg-7.jpg") #959396 no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; color: #FFFFFF !important; text-align: center; min-width: 320px !important; }
+.home-lp-color-bg { z-index: 1; width: 100%; height: 100%; background-color: rgba(63, 71, 82, 0.8); }
+.logo-lp { text-align: center; }
+.home-lp-content-container { position: absolute; padding-top: 145px; width: 100%; }
+.home-lp-content { position: relative; min-width: 320px !important; }
+#home-lp .home-lp-content h1 { font-size: 1.8em; font-weight: lighter; text-transform: uppercase; letter-spacing: 0.2em; }
+#home-lp .home-lp-content .subtitle-lp { font-family: 'latolight', Arial, sans-serif; font-size: 1.4em; font-weight: 300; }
+#home-lp .home-lp-content p { margin-top: 20px; margin-bottom: 20px; }
+#home-lp .home-lp-content .btn { text-transform: uppercase; margin: 0 5px 0 5px; }
+
+/* About */
+#about-lp { padding: 4em 0 4em 0; }
+.about-landing-page { padding-bottom: 20px; }
+#about-lp .title-lp { text-align: left; margin-top: 0; }
+#about-lp .btn { font-weight: bold; text-transform: uppercase; }
+
+/* Benefits */
+#benefits-lp { padding: 4em 0 4em 0; font-size: 1em; }
+#benefits-lp { font-weight: normal; }
+
+/* Testimonials */
+.testimonials-lp { padding: 4em 0 4em 0 }
+
+/* Pricing */
+#pricing-lp { padding: 4em 0 4em 0; }
+
+/* Contact */
+#contact-lp { padding: 4em 0 4em 0; }
+#contact-lp .subtitle-lp { margin-bottom: 1.5em; }
+#contact-lp .social-icon-container .btn { width: 150px; }
+.form-lp .form-group { margin-bottom: 0; }
+.form-lp .form-control { margin-bottom: 15px; }
+.form-lp .form-control { background-color: #FFFFFF; box-shadow: none; background-image: none; border: 1px solid #C5C5C5; border-radius: 0; color: #555555; display: block; font-size: 1em; height: 45px; line-height: 1.42857; padding: 6px 12px; width: 100%; transition: all 0.2s ease-in-out 0.2s; -moz-transition: all 0.2s ease-in-out 0.2s; -webkit-transition: all 0.2s ease-in-out 0.2s; -o-transition: all 0.2s ease-in-out 0.2s; }
+.form-lp .form-control:focus { background-color: #E7E9EB; color: #000000; border: 1px solid #C5C5C5; box-shadow: none; outline: 0 none; transition: all 0.2s ease-in-out 0.2s; -moz-transition: all 0.2s ease-in-out 0.2s; -webkit-transition: all 0.2s ease-in-out 0.2s; -o-transition: all 0.2s ease-in-out 0.2s; }
+.form-lp textarea { height: 130px !important; resize: none !important; }
+.form-lp .btn { font-weight: bold; outline: 0 !important; height: 45px; line-height: 21px; margin-bottom: 10px; text-transform: uppercase; }

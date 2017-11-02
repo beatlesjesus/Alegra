@@ -1,0 +1,46 @@
+/*
+ * Vixor - Responsive Website Template
+ * Version: 1.0.3
+ * Copyright 2016
+ * Created by: damterthemes
+ * @damterthemes: https://wrapbootstrap.com/user/damterthemes
+ */
+
+ /* COMING SOON PAGE -  STYLES */
+
+/* Google fonts - Lato */
+@font-face { font-family: 'latoblack'; src: url('../fonts/lato/lato-black-webfont.eot'); src: url('../fonts/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black-webfont.woff2') format('woff2'), url('../fonts/lato/lato-black-webfont.woff') format('woff'), url('../fonts/lato/lato-black-webfont.ttf') format('truetype'), url('../fonts/lato/lato-black-webfont.svg#latoblack') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latobold'; src: url('../fonts/lato/lato-bold-webfont.eot'); src: url('../fonts/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato/lato-bold-webfont.woff') format('woff'), url('../fonts/lato/lato-bold-webfont.ttf') format('truetype'), url('../fonts/lato/lato-bold-webfont.svg#latobold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latolight'; src: url('../fonts/lato/lato-light-webfont.eot'); src: url('../fonts/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato/lato-light-webfont.woff') format('woff'), url('../fonts/lato/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato/lato-light-webfont.svg#latolight') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latoregular'; src: url('../fonts/lato/lato-regular-webfont.eot'); src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato/lato-regular-webfont.woff') format('woff'), url('../fonts/lato/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato/lato-regular-webfont.svg#latoregular') format('svg'); font-weight: normal; font-style: normal; }
+
+html { overflow-x: hidden; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+html, body { min-width: 320px !important; }
+section { background-color: #FFFFFF; }
+.coming-soon-title { font-size: 1.8em; font-weight: lighter; text-transform: capitalize; letter-spacing: 0.05em; }
+.row { margin-right: 0; margin-left: 0; }
+
+/* Home */
+#home-cs { background: url("../images/bg-9.jpg") #959396 no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 650px; color: #FFFFFF !important; text-align: center; padding: 0; min-width: 320px !important; }
+.home-cs-color-bg { z-index: 1; width: 100%; height: 100%; background-color: rgba(48, 54, 63, 0.8); }
+.logo-cs { text-align: center; padding-top: 15px; }
+.home-cs-content-container { position: absolute; padding-top: 140px; width: 100%; }
+.home-cs-content { position: relative; min-width: 320px !important;  }
+#home-cs .home-cs-content h1 { font-size: 1.8em; font-weight: lighter; text-transform: uppercase; letter-spacing: 0.2em; }
+#home-cs .home-cs-content .subtitle-cs { font-family: 'latolight', Arial, sans-serif; font-size: 1.4em; font-weight: 300; }
+#home-cs .home-cs-content p { margin-top: 20px; margin-bottom: 20px; }
+#home-cs .home-cs-content .btn { text-transform: uppercase; margin: 0 5px 0 5px; }
+
+/* Countdown */
+.countdown_section { color: #FFFFFF; font-size: 12px; text-align: center; width: 25%; letter-spacing: 1px; border-left: 1px dashed; border-color: #FFFFFF; padding: 20px 12px 28px; text-transform: uppercase; margin-top: 50px; }
+.countdown_section:first-child { border-left: 0; }
+.countdown_amount { color: #FFFFFF; font-family: 'latobold', Arial, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: normal; line-height: 1; }
+.hasCountdown { background: transparent; border: none; }
+#counter { padding-left: 15px; }
+
+/* Subscribe */
+.coming-soon-subscribe h2 { margin-top: 0; }
+.coming-soon-subscribe { padding-top: 30px; padding-bottom: 15px; }
+.form-subscribe-coming-soon { width: 400px; margin: 0 auto; }
+.form-subscribe-coming-soon .btn { font-weight: bold; }
+#coming-soon .form-input-group-addon .input-group .form-control { border: none; }

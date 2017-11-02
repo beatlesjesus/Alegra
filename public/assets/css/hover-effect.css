@@ -1,0 +1,86 @@
+/*
+Hover Effects
+http://tympanus.net/Development/HoverEffectIdeas/
+Free for personal and commercial projects
+*/
+
+/****** Edited by: damterthemes ******/
+/*
+ * Vixor - Responsive Website Template
+ * Version: 1.0.3
+ * Copyright 2016
+ * Created by: damterthemes
+ * @damterthemes: https://wrapbootstrap.com/user/damterthemes
+ */
+
+/* Hover effects */
+
+/* Google fonts - Open Sans */
+@font-face { font-family: 'open_sanslight'; src: url('../fonts/open-sans/opensans-light-webfont.eot'); src: url('../fonts/open-sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/opensans-light-webfont.woff2') format('woff2'), url('../fonts/open-sans/opensans-light-webfont.woff') format('woff'), url('../fonts/open-sans/opensans-light-webfont.ttf') format('truetype'),  url('../fonts/open-sans/opensans-light-webfont.svg#open_sanslight') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'open_sansregular'; src: url('../fonts/open-sans/opensans-regular-webfont.eot'); src: url('../fonts/open-sans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/open-sans/opensans-regular-webfont.woff') format('woff'), url('../fonts/open-sans/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/open-sans/opensans-regular-webfont.svg#open_sansregular') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'open_sansbold'; src: url('../fonts/open-sans/opensans-bold-webfont.eot'); src: url('../fonts/open-sans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/open-sans/opensans-bold-webfont.woff') format('woff'), url('../fonts/open-sans/opensans-bold-webfont.ttf') format('truetype'), url('../fonts/open-sans/opensans-bold-webfont.svg#open_sansbold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'open_sansextrabold'; src: url('../fonts/open-sans/opensans-extrabold-webfont.eot'); src: url('../fonts/open-sans/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/opensans-extrabold-webfont.woff2') format('woff2'), url('../fonts/open-sans/opensans-extrabold-webfont.woff') format('woff'), url('../fonts/open-sans/opensans-extrabold-webfont.ttf') format('truetype'), url('../fonts/open-sans/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg'); font-weight: normal; font-style: normal; }
+
+.effect-container { font-family: 'open_sansregular', Arial, sans-serif; position: relative; margin: 0 auto; padding: 0.9em 0 4em; max-width: 1000px; list-style: none; text-align: center; }
+
+/* Common style */
+.effect-container figure { position: relative; float: left; overflow: hidden; margin: 0; min-width: 100%; max-width: 100%; max-height: 100%; width: 100%; text-align: center; }
+.effect-container figure img { position: relative; display: block; max-width: 100%; opacity: 0.5; }
+.effect-container figure figcaption { padding: 2em; color: #FFFFFF; font-size: 1.25em; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.effect-container figure figcaption::before, .effect-container figure figcaption::after { pointer-events: none; }
+.effect-container figure figcaption, .effect-container figure figcaption > a { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.effect-container figure figcaption > a { z-index: 1000; text-indent: 200%; white-space: nowrap; font-size: 0; opacity: 0; }
+.effect-container figure h2 { font-weight: 300; text-transform: capitalize; color: #FFFFFF; font-size: 1.2em; }
+.effect-container figure h2 span { font-weight: bold; }
+.effect-container figure h2, .effect-container figure p { margin: 0; }
+.effect-container figure p { font-size: 0.85em; }
+
+/* Individual effects */
+
+/*---------------*/
+/***** Effect 1 *****/
+/*---------------*/
+figure.effect-1 img { width: 100%; opacity: 1; -webkit-transition: opacity 0.35s; transition: opacity 0.35s; border: 1px solid #F0F0F0; }
+figure.effect-1:hover img { opacity: 0; }
+figure.effect-1 figcaption { text-align: left; }
+figure.effect-1 figcaption > div { position: absolute; bottom: 0; left: 0; padding: 2em; width: 100%; height: 50%; }
+figure.effect-1 h2, figure.effect-1 p { -webkit-transform: translate3d(0, 40px, 0); transform: translate3d(0, 40px, 0); }
+figure.effect-1 h2 { width: 200px; padding: 5px 5px 6px 5px; opacity: 0; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
+body figure.effect-1:hover h2 { opacity: 1; }
+figure.effect-1:hover h2, figure.effect-1:hover p { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+figure.effect-1 p { color: rgba(255,255,255,0.8); opacity: 0; -webkit-transition: opacity 0.2s, -webkit-transform 0.35s; transition: opacity 0.2s, transform 0.35s; }
+figure.effect-1:hover p { opacity: 1; -webkit-transition-delay: 0.05s; transition-delay: 0.05s; -webkit-transition-duration: 0.35s; transition-duration: 0.35s; }
+
+/*---------------*/
+/***** Effect 2 *****/
+/*---------------*/
+figure.effect-2 figcaption { top: auto; bottom: 0; padding: 1em; height: 3.75em; color: #FFFFFF; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); }
+figure.effect-2 img { width: 100%; opacity: 1; -webkit-transition: opacity 0.35s; transition: opacity 0.35s; border: 1px solid #F0F0F0; }
+figure.effect-2:hover img { opacity: 0.2; }
+figure.effect-2 h2 { float: left; font-size: 1em; margin-top: 4px; }
+figure.effect-2 p.icon-links a { float: right; color: #FFFFFF; font-size: 1.4em; margin-top: -4px; }
+figure.effect-2:hover p.icon-links a:hover, figure.effect-2:hover p.icon-links a:focus { color: #FFFFFF; }
+figure.effect-2 p.description { position: absolute; bottom: 7.3em; padding: 1.50em; left: 0; color: #FFFFFF; text-transform: none; font-size: 90%; opacity: 0; -webkit-transition: opacity 0.35s; transition: opacity 0.35s; -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */ }
+figure.effect-2 h2, figure.effect-2 p.icon-links a { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; -webkit-transform: translate3d(0, 200%, 0); transform: translate3d(0, 200%, 0); }
+figure.effect-2 p.icon-links a span::before { display: inline-block; color: #FFFFFF; padding: 9.5px 10px; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+figure.effect-2 h2 { display: inline-block; }
+figure.effect-2:hover p.description { opacity: 1; }
+figure.effect-2:hover figcaption, figure.effect-2:hover h2, figure.effect-2:hover p.icon-links a { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+figure.effect-2:hover h2 { -webkit-transition-delay: 0.05s; transition-delay: 0.05s; }
+figure.effect-2:hover p.icon-links a:nth-child(3) { -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }
+figure.effect-2:hover p.icon-links a:nth-child(2) { -webkit-transition-delay: 0.15s; transition-delay: 0.15s; }
+figure.effect-2:hover p.icon-links a:first-child { -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
+
+/*-----------------*/
+/***** Effect 3 *****/
+/*-----------------*/
+figure.effect-3 img, figure.effect-3 h2 { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
+figure.effect-3 img { width: 100%; opacity: 1; -webkit-backface-visibility: hidden; backface-visibility: hidden; border: 1px solid #F0F0F0; }
+figure.effect-3:hover img { opacity: 0.2; -webkit-transform: translate3d(0, -80px, 0); transform: translate3d(0, -80px, 0); }
+figure.effect-3 p { padding: 10px; text-transform: none; font-size: 90%; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: translate3d(0, 50px, 0); transform: translate3d(0, 50px, 0); }
+figure.effect-3 h2 { text-align: left; width: 200px; padding: 10px 10px 11px 10px; color: #FFFFFF; }
+figure.effect-3 h2, figure.effect-3 p { position: absolute; bottom: 22px; left: 0; }
+figure.effect-3:hover h2 { background-color: transparent; -webkit-transform: translate3d(0, -100px, 0); transform: translate3d(0, -100px, 0); }
+figure.effect-3:hover p { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }

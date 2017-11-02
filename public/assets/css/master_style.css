@@ -1,0 +1,38 @@
+.social-icons-2 {
+    margin-top: 80px;
+}
+
+ul.list-unstyled li {
+    padding: 5px;
+}
+
+.list-unstyled a {
+    color: #686868;
+}
+
+.list-unstyled a {
+    color: #686868;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    border: 1px solid #686868;
+    height: 20px;
+    border-radius: 0;
+    font-size: 1em;
+    text-align: center;
+    line-height: 16px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.x-btn-default-small {
+    border-color: #37BC9B;
+}
+
+.x-panel-header-default {
+    background-image: none;
+    background-color: #37BC9B;
+}

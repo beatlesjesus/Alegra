@@ -1,0 +1,302 @@
+/*
+ * Vixor - Responsive Website Template
+ * Version: 1.0.3
+ * Copyright 2016
+ * Created by: damterthemes
+ * @damterthemes: https://wrapbootstrap.com/user/damterthemes
+ */
+
+/* SUNFLOWER COLOR */
+
+/* Header 1 */
+/* Navbar-1 */
+/* .navbar-nav */
+#navbar-1 .navbar-default .navbar-nav > .active > a, #navbar-1 .navbar-default .navbar-nav > .active > a:focus, #navbar-1 .navbar-default .navbar-nav > .active > a:hover { border-top: 3px solid #F5B52E; }
+#navbar-1 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { border-top: 3px solid #F5B52E; }
+
+/* .dropdown-menu */
+#navbar-1 .dropdown-menu { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/*.dropdown-mega-menu*/
+#navbar-1 .dropdown-mega-menu .dropdown-header { color: #C2860A; }
+
+/* Header 2 */
+/* Navbar-2 */
+/* .navbar-nav */
+#navbar-2 .navbar-default .navbar-nav > .active > a, #navbar-2 .navbar-default .navbar-nav > .active > a:focus, #navbar-2 .navbar-default .navbar-nav > .active > a:hover { border-top: 3px solid #F5B52E; }
+#navbar-2 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { border-top: 3px solid #F5B52E; }
+
+/* .dropdown-menu */
+#navbar-2 .dropdown-menu { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/*.dropdown-mega-menu*/
+#navbar-2 .dropdown-mega-menu .dropdown-header { color: #C2860A; }
+
+/* Header 3 */
+/* Navbar-3 */
+/* .navbar-nav */
+#navbar-3 .navbar-default .navbar-nav > .active > a, #navbar-3 .navbar-default .navbar-nav > .active > a:focus, #navbar-3 .navbar-default .navbar-nav > .active > a:hover { border-top: 3px solid #F5B52E; }
+#navbar-3 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { border-top: 3px solid #F5B52E; }
+
+/* .dropdown-menu */
+#navbar-3 .dropdown-menu { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/*.dropdown-mega-menu*/
+#navbar-3 .dropdown-mega-menu .dropdown-header { color: #C2860A; }
+
+/* Header 4 */
+/* Navbar-4 */
+/* Search form */
+.navbar-4-search .sb-icon-search { background: #F5B52E; }
+
+/* .navbar-nav */
+#navbar-4 .navbar-default .navbar-nav > .active > a, #navbar-4 .navbar-default .navbar-nav > .active > a:focus, #navbar-4 .navbar-default .navbar-nav > .active > a:hover { border-left: 1px solid #F5B52E; border-right: 1px solid #F5B52E; color: #C2860A; }
+
+/* .dropdown-menu */
+#navbar-4 .dropdown-menu { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/*.dropdown-mega-menu*/
+#navbar-4 .dropdown-mega-menu .dropdown-header { color: #C2860A; }
+
+/* Header 5 */
+/* Navbar-5 */
+/* .navbar-nav */
+#navbar-5 .navbar-default .navbar-nav > .active > a, #navbar-5 .navbar-default .navbar-nav > .active > a:focus, #navbar-5 .navbar-default .navbar-nav > .active > a:hover { border-top: 3px solid #F5B52E; }
+#navbar-5 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { border-top: 3px solid #F5B52E; }
+
+/* .dropdown-menu */
+#navbar-5 .dropdown-menu { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/* Background colors */
+.overlay-color-bg { background-color: rgba(245, 170, 14, 0.85); }
+
+/* Links */
+a { color: #DF9A0B; }
+
+/* Titles */
+.title-1 span { color: #DF9A0B; }
+.title-2 span { color: #DF9A0B; }
+hr.hr-title-min { border-color: #F5B52E; }
+
+/* Checkbox */
+.btn-group.open .dropdown-toggle { border: 1px solid #F5B52E; }
+.bootstrap-select .dropdown-toggle { border: 1px solid #F5B52E; }
+.bootstrap-select .dropdown-toggle:hover { border: 1px solid #F5B52E; }
+
+/* Contact form */
+/* Contact form 1 */
+.info-contact-detail .info-contact-icon { border: 1px solid #F5B52E; color: #F5B52E; }
+
+/* Progress bar */
+/* Progress bar skills */
+.skill-text { background-color: #DF9A0B; }
+.progress-bar-custom { background-color: #F5B52E; }
+
+/* Timeline*/
+.timeline dl:before { background-color: #F5B52E; }
+.timeline dl dt { color: #DF9A0B; border: 1px solid #F5B52E; }
+.timeline dl dd .circle { border: 4px solid #F5B52E; }
+.timeline dl dd .events { border: 1px solid #F5B52E; }
+
+/* Buttons */
+/* Custom buttons */
+/* .btn-custom */
+.btn-custom { background-color: #F5B52E; border: 1px solid #F5B52E; }
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active { background-color: #DF9A0B; border: 1px solid #DF9A0B; }
+.btn-custom.disabled:hover, .btn-custom.disabled:focus, .btn-custom.disabled:active, .btn-custom.disabled.active, .btn-custom[disabled]:hover, .btn-custom[disabled]:focus, .btn-custom[disabled]:active, .btn-custom[disabled].active, fieldset[disabled] .btn-custom:hover, fieldset[disabled] .btn-custom:focus, fieldset[disabled] .btn-custom:active, fieldset[disabled] .btn-custom.active { background-color: #F5B52E; border: 1px solid #F5B52E; }
+
+/* .btn-custom-outline */
+.btn-custom-outline { border: 1px solid #F5B52E; color: #DF9A0B !important; }
+.btn-custom-outline:hover, .btn-custom-outline:focus, .btn-custom-outline:active, .btn-custom-outline.active { background-color: #F5B52E; border: 1px solid #F5B52E; }
+.btn-custom-outline.disabled:hover, .btn-custom-outline.disabled:focus, .btn-custom-outline.disabled:active, .btn-custom-outline.disabled.active, .btn-custom-outline[disabled]:hover, .btn-custom-outline[disabled]:focus, .btn-custom-outline[disabled]:active, .btn-custom-outline[disabled].active, fieldset[disabled] .btn-custom-outline:hover, fieldset[disabled] .btn-custom-outline:focus, fieldset[disabled] .btn-custom-outline:active, fieldset[disabled] .btn-custom-outline.active { background-color: #F5B52E; border: 1px solid #F5B52E; }
+
+/* .btn-custom-outline-inverse */
+.btn-custom-outline-inverse:active, .btn-custom-outline-inverse:focus, .btn-custom-outline-inverse:hover { color: #F5B52E !important; }
+
+/* Pagination buttons */
+.pagination > li > a, .pagination > li > span { border: 1px solid #F5B52E !important; }
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus { border: 1px solid #F5B52E !important; }
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus { background-color: #F5B52E; border: 1px solid #F5B52E !important; }
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus { border: 1px solid #F5B52E !important; }
+
+/* Panel */
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body { border-top: 1px solid #F5B52E; }
+.panel-default > .panel-heading { background-color: #F5B52E; border-color: #F5B52E; }
+
+/* panel-tabs */
+.panel-tabs { border: 1px solid #F5B52E; }
+
+/* Accordion */
+.bs-accordion .panel-default { border: 1px solid #F5B52E; }
+.bs-accordion .panel-default > .bs-accordion .panel-heading { color: #DF9A0B; }
+.bs-accordion .panel-heading a, .bs-accordion .panel-heading a:hover, .bs-accordion .panel-heading a:focus { color: #DF9A0B; }
+.bs-accordion .panel-title span:hover { color: #DF9A0B; }
+.active-accordion span { color: #DF9A0B !important; }
+
+/* Carousel */
+/* Carousel basic 1 */
+#carousel-basic-1 .carousel-indicators .active { background-color: #F5B52E; border: 2px solid #F5B52E; }
+
+/* Carousel basic 2 */
+#carousel-basic-2 .carousel-indicators .active { background-color: #F5B52E; border: 2px solid #F5B52E; }
+
+/* #bs-carousel-slide */
+#bs-carousel-slide .carousel-indicators .active { background-color: #F5B52E; }
+
+/* Bootstrap Carousel Animations */
+#carousel-animations .carousel-indicators .active { background-color: #DF9A0B; }
+
+/* Well */
+.well hr { border-color: #F5B52E; }
+
+/* Breadcrumb */
+.breadcrumb-container { background-color: rgba(245, 170, 14, 0.85); }
+
+/* Pricing Tables */
+/* Pricing Tables 1 */
+.pricing-tables-1 .pricing .plan { border: 1px solid #F5B52E; }
+.pricing-tables-1 .pricing .plan li.plan-price { background-color: #F5B52E; }
+.pricing-tables-1 .pricing .plan li.plan-name { background: #F5B52E; border-bottom: 1px solid #F5B52E; }
+.pricing-tables-1 .pricing .plan.featured { border: 3px solid #F5B52E; }
+
+/* Pricing Tables 2 */
+.pricing-tables-2 .pricing .plan { border: 1px solid #F5B52E; }
+.pricing-tables-2 .pricing .plan li.plan-name { background: #F5B52E; border-bottom: 1px solid #F5B52E; }
+body .pricing-tables-2 .plan:hover li.plan-name { background-color: #F5B52E; border-bottom: 1px solid #F5B52E; }
+.pricing-tables-2 .pricing .plan li.plan-price { background-color: #F5B52E; }
+body .pricing-tables-2 .plan:hover li.plan-price { border: 2px solid #F5B52E;  }
+body .pricing-tables-2 .plan:hover li > strong { color: #F5B52E !important; }
+.pricing-tables-2 .pricing .plan.featured { border: 3px solid #F5B52E; }
+
+/* Pricing Tables 3 */
+.pricing-tables-3 .pricing .plan { border: 1px solid #F5B52E; }
+.pricing-tables-3 .pricing .plan li.plan-details h3 { color: #F5B52E; }
+.pricing-tables-3 .pricing .plan li.plan-price { border: 1px solid #F5B52E; }
+body .pricing-tables-3 .plan:hover li.plan-price { background-color: #F5B52E; border: 1px solid #F5B52E; }
+.pricing-tables-3 .pricing .plan li > strong { color: #F5B52E; }
+.pricing-tables-3 .pricing .plan.featured { border: 3px solid #F5B52E; }
+.pricing-tables-3 .pricing .plan.featured li.plan-price { border: 3px solid #F5B52E; }
+
+/* Pricing Tables 4 */
+.pricing-tables-4 .pricing .plan { border: 1px solid #F5B52E; }
+.pricing-tables-4 .pricing .plan li.plan-details h3 { color: #F5B52E; }
+.pricing-tables-4 .pricing .plan li.plan-price { border: 1px solid #F5B52E; }
+body .pricing-tables-4 .plan:hover li.plan-price { background-color: #F5B52E; border: 1px solid #F5B52E; }
+.pricing-tables-4 .pricing .plan li > strong { color: #F5B52E; }
+.pricing-tables-4 .pricing .plan li.plan-action { background-color: #F5B52E; }
+.pricing-tables-4 .pricing .plan.featured { border: 3px solid #F5B52E; }
+.pricing-tables-4 .pricing .plan.featured li.plan-price { border: 3px solid #F5B52E; }
+
+/* Pricing Tables 5 */
+.pricing-tables-5 .pricing .plan { border: 1px solid #F5B52E; }
+.pricing-tables-5 .pricing .plan li.plan-price { border: 1px solid #F5B52E; }
+body .pricing-tables-5 .plan:hover li.plan-price { background-color: #F5B52E; border: 1px solid #F5B52E; }
+.pricing-tables-5 .pricing .plan li > strong { color: #F5B52E; }
+.pricing-tables-5 .pricing .plan li.plan-name { color: #F5B52E; border-bottom: 1px solid #F5B52E; }
+.pricing-tables-5 .pricing .plan.featured { border: 3px solid #F5B52E; }
+
+/* Table */
+.table { border: 1px solid #F5B52E; }
+thead { background-color: #F5B52E; }
+
+/* Sliders */
+/* Nivo Slider */
+.theme-default .nivo-caption { background: #F5B52E; }
+
+/* Hero Slider */
+#hero-slider a { color: #DF9A0B; }
+.hero-hero-slider li span { background-color: #F5B52E; }
+.hero-slider-nav a { color: #DF9A0B !important; }
+.hero-slider-nav li.selected a { background-color: #F5B52E; border: 2px solid #F5B52E !important; }
+.no-touch .hero-slider-nav li.selected a:hover { background-color: #F5B52E; border: 2px solid #F5B52E !important; }
+.hero-slider-nav a { color: #DF9A0B !important; }
+
+/* Background Image Static */
+#background-image-static span { color: #F5B52E; }
+
+/* Flex Slider */
+.flex-control-paging li a.flex-active { background: #DF9A0B; }
+.flex-control-paging li a:hover { background: #DF9A0B; }
+
+/* Call to action */
+/* Call to action 1 */
+#call-to-action-1 .well { border: 1px solid #F5B52E; }
+
+/* Call to action 2 */
+#call-to-action-2 .well { border: 1px solid #F5B52E; }
+#call-to-action-2 h2 { color: #F5B52E; }
+
+/* Call to action 3 */
+#call-to-action-3 .well { border-top: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; }
+
+/* Features */
+/* Features 1 */
+.features-1 .icon-circle { border: 1px solid #F5B52E; color: #DF9A0B; }
+body #features-1 .features-1-content:hover .icon-circle { background-color: #F5B52E; }
+
+/* Features 2 */
+#features-2 .panel { border: 1px solid #F5B52E; }
+.features-2 .icon-square { border-left: 1px solid #F5B52E; border-right: 1px solid #F5B52E; border-bottom: 1px solid #F5B52E; color: #DF9A0B; }
+body #features-2 .features-2-content:hover .icon-square { background-color: #F5B52E; }
+.features-2 h3 { color: #DF9A0B; }
+
+/* Features 3 */
+.feature-3-rounded { border: 1px solid #F5B52E; color: #DF9A0B; }
+body #features-3 .features-3-content:hover .feature-3-rounded { background-color: #DF9A0B; }
+.features-3-content h3 { color: #DF9A0B; }
+
+/* Benefits */
+.nav-tabs > li { border-left: 1px solid #F5B52E; }
+.nav-tabs.nav-justified > li > a { color: #DF9A0B; border-bottom: 1px solid #F5B52E !important; }
+.nav-tabs.nav-justified > .active > a { color: #DF9A0B; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { color: #DF9A0B; }
+
+/* Portfolio with filter */
+#filters a.active { color: #DF9A0B !important; }
+
+/* Blog */
+
+/* Blog widget */
+.blog-widget .image-caption-post-title { color: #DF9A0B; }
+.blog-widget .image-caption-post-title a { color: #DF9A0B; }
+
+/* Testimonials */
+/* Quote carousel 1 */
+#quote-carousel-1 .carousel-indicators li { border: 1px solid #F5B52E; }
+#quote-carousel-1 .carousel-indicators .active { border: 1px solid #F5B52E; }
+
+/* Quote carousel 2 */
+#quote-carousel-2 .carousel-indicators li { border: 1px solid #F5B52E; }
+#quote-carousel-2 .carousel-indicators .active { border: 1px solid #F5B52E; }
+
+/* Quote carousel 3 */
+#quote-carousel-3 .carousel-indicators li { border: 1px solid #F5B52E; }
+#quote-carousel-3 .carousel-indicators .active { border: 1px solid #F5B52E; }
+
+/* Quote carousel 4 */
+#quote-carousel-4 .carousel-indicators li { border: 1px solid #F5B52E; }
+#quote-carousel-4 .carousel-indicators .active { border: 1px solid #F5B52E; }
+
+/* Testimonials 2 */
+#testimonial-carousel-2 .carousel-indicators li { border: 1px solid #F5B52E; }
+#testimonial-carousel-2 .carousel-indicators .active { border: 1px solid #F5B52E; }
+
+/* 404 Error */
+#error-page-message h1 { color: #F5B52E; }
+#torn-paper { background-color: #F5B52E; }
+#error-page-info { background-color: #F5B52E; }
+
+/* Widget Flickr */
+.widget-flickr .flickr-feed > li > a:hover { border: 4px solid #F5B52E; }
+.widget-flickr.widget-footer .flickr-feed > li > a:hover { border: 4px solid #F5B52E; }
+
+/* Hover effects */
+/* Common style */
+.effect-container figure { background: #EDA40C; }
+
+/* Effect 2 */
+body figure.effect-2:hover figcaption { background: #EDA40C; }
+
+/* Effect 3 */
+figure.effect-2 { background: #EDA40C; }
+figure.effect-3 h2 { background-color: #EDA40C; }

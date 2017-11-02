@@ -1,0 +1,23 @@
+/*
+ * Vixor - Responsive Website Template
+ * Version: 1.0.3
+ * Copyright 2016
+ * Created by: damterthemes
+ * @damterthemes: https://wrapbootstrap.com/user/damterthemes
+ */
+
+/* STYLES FOR INTERNET EXPLORER */
+
+/* Navbar */
+#navbar-1 .dropdown-mega-menu .disabled > a:hover, .dropdown-mega-menu .disabled > a:focus { filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+#navbar-2 .dropdown-mega-menu .disabled > a:hover, .dropdown-mega-menu .disabled > a:focus { filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+#navbar-3 .dropdown-mega-menu .disabled > a:hover, #navbar-3 .dropdown-mega-menu .disabled > a:focus { filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+#navbar-4 .dropdown-mega-menu .disabled > a:hover, #navbar-4 .dropdown-mega-menu .disabled > a:focus { filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+#navbar-5 .dropdown-mega-menu .disabled > a:hover, #navbar-5 .dropdown-mega-menu .disabled > a:focus { filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+/* Timeline */
+.timeline dl dd .events .events-body { zoom: 1; }
