@@ -30,9 +30,8 @@ class ClienteController extends AbstractActionController
     public function searchAction()
     {
         $modelo   = new Modelo();
-        @$nombre   = $_REQUEST['nombre'];
-        @$apellido = $_REQUEST['apellido'];
-        $response = $modelo->serchClient($nombre,$apellido);
+        @$nombre  = $_REQUEST['nombre'];
+        $response = $modelo->serchClient($nombre);
         die($response);
 
     }
@@ -41,15 +40,14 @@ class ClienteController extends AbstractActionController
     public function seaveAction()
     {
         $modelo       = new Modelo();
-        @$usuario      = $_POST['usuario'];
-        @$clave        = $_POST['clave'];
+        @$identificacion      = $_POST['identificacion'];
         @$nombre       = $_POST['nombre'];
         @$apellidos    = $_POST['apellidos'];
         @$telefono     = $_POST['telefono'];
         @$celular      = $_POST['celular'];
         @$descripcion  = $_POST['descripcion'];
         
-        $response = $modelo->saveClient($usuario,$clave,$nombre,$apellidos,$telefono,$celular,$descripcion);
+        $response = $modelo->saveClient($identificacion,$nombre,$apellidos,$telefono,$celular,$descripcion);
         die($response);
 
     }
