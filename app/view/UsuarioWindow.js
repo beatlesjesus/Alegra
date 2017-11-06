@@ -94,16 +94,8 @@ Ext.define('AM.view.UsuarioWindow', {
                 items: [{
                         xtype: 'textfield',
                         anchor: '100%',
-                        fieldLabel: 'Usuario',
-                        name: 'usuario',
-                        allowBlank: false
-                    },
-                    {
-                        xtype: 'textfield',
-                        anchor: '100%',
-                        fieldLabel: 'Clave',
-                        inputType: 'password',
-                        name: 'clave',
+                        fieldLabel: 'Identification',
+                        name: 'identificacion',
                         allowBlank: false
                     },
                     {
