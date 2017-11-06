@@ -4,27 +4,13 @@ namespace Application\Model\Entity;
 
 class Modelo{
 
-    public function getClient(){
-        $api_url = 'https://app.alegra.com/api/v1/contacts/';
-        $client_id = 'johnmanuelpenaloza@hotmail.com';
-        $client_secret = '03d2d7d3c3234dea7496';
-        $context = stream_context_create(array(
-            'http' => array(
-                'header' => "Authorization: Basic " . base64_encode("$client_id:$client_secret"),
-            ),
-        ));
-        $result = file_get_contents($api_url, false, $context);
-        $result = json_decode($result);
-        $array = json_encode(array('totalCount' => count($result),'items'=>$result)) ;
-        echo $array;
-   }
+  
 
-
-
-   public function serchClient($nombre,$apellido){
+   public function serchClient($data){
     
-    if(empty($nombre) and empty($apellido)){
-
+    session_start();
+    @$_SESSION["data"]=$data;
+     
         $api_url = 'https://app.alegra.com/api/v1/contacts/';
         $client_id = 'johnmanuelpenaloza@hotmail.com';
         $client_secret = '03d2d7d3c3234dea7496';
@@ -35,77 +21,71 @@ class Modelo{
         ));
         $result = file_get_contents($api_url, false, $context);
         $result = json_decode($result);
-        $array  = ($result!="")?json_encode(array('success' => 'true')):$result;
-        echo $array;
-
-    }elseif(!empty($nombre)){
-
-        $api_url = 'https://app.alegra.com/api/v1/contacts/:'.$nombre;
-        $client_id = 'johnmanuelpenaloza@hotmail.com';
-        $client_secret = '03d2d7d3c3234dea7496';
-        $context = stream_context_create(array(
-            'http' => array(
-                'header' => "Authorization: Basic " . base64_encode("$client_id:$client_secret"),
-            ),
-        ));
-        $result = file_get_contents($api_url, false, $context);
-        $result = json_decode($result);
-        $array  = ($result!="")?json_encode(array('success' => 'true')):$result;
-        echo $array;
-
-    }elseif (!empty($apellido)) {
+        $_SESSION["cliente_info"] = $result;
+        if($result !=""){
+            $array = json_encode(array('success' => 'true'));
+        }
         
-        $api_url = 'https://app.alegra.com/api/v1/contacts/:'.$apellido;
-        $client_id = 'johnmanuelpenaloza@hotmail.com';
-        $client_secret = '03d2d7d3c3234dea7496';
-        $context = stream_context_create(array(
-            'http' => array(
-                'header' => "Authorization: Basic " . base64_encode("$client_id:$client_secret"),
-            ),
-        ));
-        $result = file_get_contents($api_url, false, $context);
-        $result = json_decode($result);
-        $array  = ($result!="")?json_encode(array('success' => 'true')):$result;
         echo $array;
+
     }
 
-}
+    public function getClient(){
+    
+            session_start();
+            @$data         = $_SESSION["data"];
+            @$cliente_info = $_SESSION["cliente_info"];
+            
+            $n = count($cliente_info);
+            for($i = 0; $i< $n; $i++){
+                if($cliente_info[$i]->name == $data){
+                    $id = $cliente_info[$i]->id;
+                }
+            }
 
-public function saveClient($usuario,$clave,$nombre,$apellidos,$telefono,$celular,$descripcion){
+            
+            if(!empty($id)){
+                $api_url = 'https://app.alegra.com/api/v1/contacts/'.$id;
+            }else{
+                $api_url = 'https://app.alegra.com/api/v1/contacts/';
+            }
 
-    $api_url = 'https://app.alegra.com/api/v1/contacts/';
-    $client_id = 'johnmanuelpenaloza@hotmail.com';
-    $client_secret = '03d2d7d3c3234dea7496';
+            $client_id = 'johnmanuelpenaloza@hotmail.com';
+            $client_secret = '03d2d7d3c3234dea7496';
+            $context = stream_context_create(array(
+                'http' => array(
+                    'header' => "Authorization: Basic " . base64_encode("$client_id:$client_secret"),
+                ),
+            ));
+            $result = file_get_contents($api_url, false, $context);
+            $result = json_decode($result);
+            $array = json_encode(array('totalCount' => count($result),'items'=>$result)) ;
+            echo $array;
+       }   
 
-    $postdata = http_build_query(
-        array(
-            'usuario' => $usuario,
-            'clave' => $clave,
-            'nombre' => $nombre,
-            'apellidos' => $apellidos,
-            'telefono' => $telefono,
-            'celular' => $celular,
-            'descripcion' => $descripcion
-        )
+
+public function saveClient($identificacion,$nombre,$apellidos,$telefono,$celular,$descripcion){
+
+    $host = 'https://app.alegra.com/api/v1/contacts';
+    $data = array('name' => $nombre, 'identification' => $identificacion, 'identification (Perú)' => '', 'type' => '', 'internalContacts' => '','phonePrimary'=>$telefono,'observations'=>$descripcion);
+    $data_string = json_encode($data);
+    $headers = array(
+        'Content-Type:application/json',
+        'Content-Length: ' . strlen($data_string),
+        'Authorization: Basic '. base64_encode('johnmanuelpenaloza@hotmail.com:03d2d7d3c3234dea7496')
     );
+    
+    $ch = curl_init($host); 
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');  
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+    $result = curl_exec($ch);
+    curl_close($ch);  
+   
+    $array  = ($result!="")?json_encode(array('success' => 'true')):$result;
+    echo $array;
 
-    $context = stream_context_create(array(
-        'http' => array(
-            'header' => "Authorization: Basic " . base64_encode("$client_id:$client_secret"),            
-            'content' => $postdata,
-        ),
-    ));
-
-    $result = file_get_contents($api_url, false, $context);
-    $result = json_decode($result);
-
-    if(!empty($result)){
-        $data=array('success' => 'true');
-    }else{
-        $data=array('success' => 'false');
-    }
-    json_encode($data);
-    echo $data;
 }
 
 
